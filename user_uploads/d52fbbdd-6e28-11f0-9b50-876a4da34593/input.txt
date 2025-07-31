@@ -1,0 +1,14 @@
+file 'IMG-20250731-WA0008.jpg'
+duration 1
+file 'IMG-20250731-WA0007.jpg'
+duration 1
+file 'IMG-20250731-WA0006.jpg'
+duration 1
+file 'IMG-20250731-WA0005.jpg'
+duration 1
+file 'IMG-20250731-WA0004.jpg'
+duration 1
+file 'IMG-20250731-WA0003.jpg'
+duration 1
+file 'IMG-20250501-WA0011.jpg'
+duration 1

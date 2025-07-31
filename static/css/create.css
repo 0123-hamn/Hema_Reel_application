@@ -1,0 +1,230 @@
+.upload-section {
+    padding: 5rem 0; /* More padding */
+    background: var(--light-bg); /* Light purple background */
+    min-height: 80vh; /* Taller section */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content vertically and horizontally */
+}
+
+.upload-container {
+    max-width: 850px; /* Slightly wider container */
+    margin: 0 auto;
+    padding: 3rem; /* More padding inside */
+    background: white;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    border: 1px solid rgba(var(--primary-color-rgb), 0.1); /* Subtle border */
+}
+
+.upload-title {
+    text-align: center;
+    margin-bottom: 2.5rem; /* More margin */
+    color: var(--primary-color); /* Primary color */
+    font-size: 2.8rem; /* Larger title */
+    font-weight: 700;
+}
+
+.upload-instructions {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.dropzone {
+    border: 3px dashed var(--secondary-color) !important; /* Thicker, secondary color dashed border */
+    border-radius: 15px !important; /* More rounded corners */
+    background: rgba(var(--primary-color-rgb), 0.05) !important; /* Light primary color background */
+    min-height: 220px !important; /* Taller dropzone */
+    padding: 30px !important; /* More padding */
+    cursor: pointer !important;
+    transition: all 0.3s ease;
+}
+
+.dropzone:hover {
+    background: rgba(var(--primary-color-rgb), 0.1) !important;
+    border-color: var(--accent-color) !important; /* Accent color on hover */
+}
+
+.dropzone .dz-message {
+    margin: 2.5em 0 !important; /* More vertical margin */
+    color: var(--secondary-color) !important; /* Secondary color for message */
+    font-size: 1.5rem !important; /* Larger font size */
+    font-weight: 600;
+}
+
+.submit-btn {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); /* Gradient background */
+    color: white;
+    padding: 1.2rem 2.5rem; /* More padding */
+    border: none;
+    border-radius: 30px; /* Pill shape */
+    font-weight: bold;
+    margin-top: 3rem; /* More top margin */
+    width: 100%;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.submit-btn:hover {
+    transform: translateY(-5px); /* More pronounced lift */
+    background: linear-gradient(to right, var(--secondary-color), var(--accent-color)); /* Change gradient on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.text-input-container {
+    margin: 2.5rem 0; /* More vertical margin */
+}
+
+.text-input {
+    width: 100%;
+    padding: 1.2rem; /* More padding */
+    border: 2px solid var(--secondary-color); /* Secondary color border */
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.1rem; /* Larger font size */
+    color: #333;
+    resize: vertical;
+    min-height: 120px; /* Taller text area */
+    transition: all 0.3s ease;
+    font-family: inherit;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); /* Inner shadow */
+}
+
+.text-input:hover {
+    border-color: var(--accent-color); /* Accent color on hover */
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: var(--accent-color); /* Accent color on focus */
+    box-shadow: 0 0 0 4px rgba(var(--secondary-color-rgb), 0.2); /* Larger, softer shadow on focus */
+}
+
+.text-input::placeholder {
+    color: #999;
+    opacity: 0.8;
+}
+
+.file-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* More margin */
+    gap: 15px; /* More gap */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.file-input {
+    flex: 1;
+    padding: 10px; /* More padding */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly more rounded */
+    background-color: #fff;
+    font-size: 1rem;
+    color: #333;
+    min-width: 150px; /* Ensure input doesn't get too small */
+}
+
+.add-file-btn {
+    background-color: var(--primary-color); /* Primary color */
+    color: white;
+    border: none;
+    padding: 12px 25px; /* More padding */
+    border-radius: 8px; /* Slightly more rounded */
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-file-btn:hover {
+    background-color: var(--secondary-color); /* Secondary color on hover */
+    transform: translateY(-2px);
+}
+
+.remove-file-btn {
+    background-color: #EF5350; /* Red for delete */
+    color: white;
+    border: none;
+    width: 38px; /* Larger button */
+    height: 38px; /* Larger button */
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px; /* Larger icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.remove-file-btn:hover {
+    background-color: #D32F2F; /* Darker red on hover */
+    transform: translateY(-2px);
+}
+
+#fileInputs {
+    margin-bottom: 20px; /* More margin */
+}
+
+/* Style for the file input when a file is selected */
+.file-input:not(:placeholder-shown) {
+    border-color: var(--primary-color); /* Primary color border when filled */
+    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .upload-container {
+        padding: 2rem;
+    }
+    .upload-title {
+        font-size: 2rem;
+    }
+    .dropzone .dz-message {
+        font-size: 1.2rem !important;
+    }
+    .file-input-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    .remove-file-btn {
+        align-self: flex-end;
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .add-file-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .upload-container {
+        padding: 1.5rem;
+    }
+    .upload-title {
+        font-size: 1.8rem;
+    }
+    .submit-btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    .text-input {
+        min-height: 100px;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,2 @@
+file 'linkdin.jpg'
+duration 1
